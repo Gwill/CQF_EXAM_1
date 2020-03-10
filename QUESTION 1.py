@@ -11,11 +11,13 @@ S=np.array([0.05,0.12,0.17,0.25])
 
 m = 0.045
 
-CORR_MULTIPLIER= 1
+CORR_MULTIPLIER= 1.5
 
 #print("CORR MUTLIPLIER: " + str(CORR_MULTIPLIER))
 
-S =  S*CORR_MULTIPLIER
+R =  R*CORR_MULTIPLIER
+
+np.fill_diagonal(R, 1)
 
 #print("PLEASE SEE BELOW THE CORREL MATRIX:")
 #print(S)

@@ -5,7 +5,7 @@ mean_returns = 1/100
 vol_returns = 3/100
 mean_spread = round(0.35/100,4)
 vol_spread = 1.5/100
-factor = 2.33
+factor = 2.32635
 
 VAR = portfolio_value*(-mean_returns + factor * vol_returns)
 LVAR = portfolio_value*(-mean_returns + factor * vol_returns + 0.5*(mean_spread + factor*vol_spread))
@@ -30,7 +30,7 @@ mean_returns = 0/100
 vol_returns = 3/100
 mean_spread = round(0.15/100,4)
 vol_spread = 0/100
-factor = 2.33
+factor = 2.32635
 
 VAR = portfolio_value*(-mean_returns + factor * vol_returns)
 LVAR = portfolio_value*(-mean_returns + factor * vol_returns + 0.5*(mean_spread + factor*vol_spread))
@@ -53,7 +53,7 @@ mean_returns = 0/100
 vol_returns = 3/100
 mean_spread = round(1.25/100,4)
 vol_spread = 0/100
-factor = 2.33
+factor = 2.32635
 
 VAR = portfolio_value*(-mean_returns + factor * vol_returns)
 LVAR = portfolio_value*(-mean_returns + factor * vol_returns + 0.5*(mean_spread + factor*vol_spread))
@@ -69,5 +69,3 @@ print('factor: ' + str(factor))
 print('VAR: ' + str(VAR))
 print('LVAR: ' + str(LVAR))
 print('LVAR_MINUS_VAR: ' + str(LVAR_MINUS_VAR))
-
-
